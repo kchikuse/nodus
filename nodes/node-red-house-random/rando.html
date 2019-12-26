@@ -1,0 +1,27 @@
+<script type="text/javascript">
+  RED.nodes.registerType('rando', {
+    'inputs': 1,
+    'outputs': 1,
+    'color': '#a6bbcf',
+    'icon': 'foot.png',
+    'category': 'house',
+    'defaults': {
+      'name': { 'value': '' }
+    },
+    label: function() {
+      return this.name || 'random'
+    }
+  })
+</script>
+
+<script type="text/x-red" data-template-name="rando">
+  <div class="form-row">
+    <label for="node-input-name">
+    <i class="fa fa-tag"></i> Name</label>
+    <input type="text" id="node-input-name" placeholder="Name">
+  </div>
+</script>
+
+<script type="text/x-red" data-help-name="rando">
+  <p>Gets a random item out of an array</p>
+</script>

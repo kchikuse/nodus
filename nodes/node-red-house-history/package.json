@@ -1,0 +1,59 @@
+{
+  "_from": "node-red-house-history",
+  "_id": "node-red-house-history@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-HwHyjys8mndgsHJ+8fLrnjEm67A=",
+  "_location": "/node-red-house-history",
+  "_phantomChildren": {
+    "CSSwhat": "0.4.7",
+    "dom-serializer": "0.0.1",
+    "domelementtype": "1.3.1",
+    "domutils": "1.4.3",
+    "lodash": "2.4.2",
+    "readable-stream": "1.1.14"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "node-red-house-history",
+    "name": "node-red-house-history",
+    "escapedName": "node-red-house-history",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-red-house-history/-/node-red-house-history-0.0.1.tgz",
+  "_shasum": "1f01f28f2b3c9a7760b0727ef1f2eb9e3126ebb0",
+  "_spec": "node-red-house-history",
+  "_where": "/Users/KChikuse/work/MY/nodus",
+  "author": {
+    "name": "Knowledge Chikuse"
+  },
+  "bugs": {
+    "url": "https://github.com/kchikuse/nodus/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "cheerio": "^0.18.0",
+    "request": "^2.42.0"
+  },
+  "deprecated": false,
+  "description": "Get today in history",
+  "homepage": "https://github.com/kchikuse/nodus#readme",
+  "license": "Apache",
+  "name": "node-red-house-history",
+  "node-red": {
+    "nodes": {
+      "history": "history.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kchikuse/nodus.git"
+  },
+  "version": "0.0.1"
+}

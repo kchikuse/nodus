@@ -1,0 +1,48 @@
+{
+  "_from": "node-red-house-fuzzy",
+  "_id": "node-red-house-fuzzy@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-iz0WDJ73cpJP2vTXxnw9+1S0n3Q=",
+  "_location": "/node-red-house-fuzzy",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "node-red-house-fuzzy",
+    "name": "node-red-house-fuzzy",
+    "escapedName": "node-red-house-fuzzy",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-red-house-fuzzy/-/node-red-house-fuzzy-0.0.1.tgz",
+  "_shasum": "8b3d160c9ef772924fdaf4d7c67c3dfb54b49f74",
+  "_spec": "node-red-house-fuzzy",
+  "_where": "/Users/KChikuse/work/MY/nodus",
+  "author": {
+    "name": "Knowledge Chikuse"
+  },
+  "bugs": {
+    "url": "https://github.com/kchikuse/nodus/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Gets the fuzzy time of the day",
+  "homepage": "https://github.com/kchikuse/nodus#readme",
+  "license": "Apache",
+  "name": "node-red-house-fuzzy",
+  "node-red": {
+    "nodes": {
+      "fuzzy": "fuzzy.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kchikuse/nodus.git"
+  },
+  "version": "0.0.1"
+}

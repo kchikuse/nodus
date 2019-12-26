@@ -1,0 +1,40 @@
+{
+  "_from": "node-red-house-isup",
+  "_id": "node-red-house-isup@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-R+fakVpIQrT8fdbi7/SoikD3lPQ=",
+  "_location": "/node-red-house-isup",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "node-red-house-isup",
+    "name": "node-red-house-isup",
+    "escapedName": "node-red-house-isup",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-red-house-isup/-/node-red-house-isup-0.0.1.tgz",
+  "_shasum": "47e7da915a4842b4fc7dd6e2eff4a88a40f794f4",
+  "_spec": "node-red-house-isup",
+  "_where": "/Users/KChikuse/work/MY/nodus",
+  "author": {
+    "name": "Knowledge Chikuse"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Checks if website is up",
+  "license": "Apache",
+  "name": "node-red-house-isup",
+  "node-red": {
+    "nodes": {
+      "isup": "isup.js"
+    }
+  },
+  "version": "0.0.1"
+}

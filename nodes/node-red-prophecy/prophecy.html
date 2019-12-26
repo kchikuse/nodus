@@ -1,0 +1,26 @@
+<script type="text/javascript">
+  RED.nodes.registerType('prophecy', {
+    category: 'input',
+    color: '#a6bbcf',
+    defaults: {
+      name: { value: "" }
+    },
+    inputs: 1,
+    outputs: 1,
+    label: function() {
+      return this.name || "prophecy";
+    },
+  });
+</script>
+
+<script type="text/x-red" data-template-name="prophecy">
+  <div class="form-row">
+    <label for="node-input-name">
+    <i class="fa fa-tag"></i> Name</label>
+    <input type="text" id="node-input-name" placeholder="Name">
+  </div>
+</script>
+
+<script type="text/x-red" data-help-name="prophecy">
+  <p>Get the Spirit of Prophecy Bulletin by Bill and Marsha Burns of Faith Tabernacle</p>
+</script>

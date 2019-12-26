@@ -1,0 +1,48 @@
+{
+  "_from": "node-red-house-sanitize",
+  "_id": "node-red-house-sanitize@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-SF92MbIYs8fulcsKvwXQZ62J6tE=",
+  "_location": "/node-red-house-sanitize",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "node-red-house-sanitize",
+    "name": "node-red-house-sanitize",
+    "escapedName": "node-red-house-sanitize",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-red-house-sanitize/-/node-red-house-sanitize-0.0.1.tgz",
+  "_shasum": "485f7631b218b3c7ee95cb0abf05d067ad89ead1",
+  "_spec": "node-red-house-sanitize",
+  "_where": "/Users/KChikuse/work/MY/nodus",
+  "author": {
+    "name": "Knowledge Chikuse"
+  },
+  "bugs": {
+    "url": "https://github.com/kchikuse/nodus/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Strips HTML from payload",
+  "homepage": "https://github.com/kchikuse/nodus#readme",
+  "license": "Apache",
+  "name": "node-red-house-sanitize",
+  "node-red": {
+    "nodes": {
+      "sanitize": "sanitize.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kchikuse/nodus.git"
+  },
+  "version": "0.0.1"
+}

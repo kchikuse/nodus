@@ -1,0 +1,52 @@
+{
+  "_from": "node-red-house-feedly",
+  "_id": "node-red-house-feedly@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-wu3dRfQpKAiU3tyBWZs3us9IpIo=",
+  "_location": "/node-red-house-feedly",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "node-red-house-feedly",
+    "name": "node-red-house-feedly",
+    "escapedName": "node-red-house-feedly",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-red-house-feedly/-/node-red-house-feedly-0.0.1.tgz",
+  "_shasum": "c2eddd45f429280894dedc81599b37bacf48a48a",
+  "_spec": "node-red-house-feedly",
+  "_where": "/Users/KChikuse/work/MY/nodus",
+  "author": {
+    "name": "Knowledge Chikuse"
+  },
+  "bugs": {
+    "url": "https://github.com/kchikuse/nodus/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "scrap": "^0.1.0",
+    "underscore": "^1.7.0"
+  },
+  "deprecated": false,
+  "description": "Gets multiple RSS feeds",
+  "homepage": "https://github.com/kchikuse/nodus#readme",
+  "license": "Apache",
+  "name": "node-red-house-feedly",
+  "node-red": {
+    "nodes": {
+      "feedly": "feedly.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kchikuse/nodus.git"
+  },
+  "version": "0.0.1"
+}

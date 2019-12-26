@@ -1,0 +1,40 @@
+{
+  "_from": "node-red-house-random",
+  "_id": "node-red-house-random@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-5lzeiUPpOCWIyjdAFagnOJ6vVYA=",
+  "_location": "/node-red-house-random",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "node-red-house-random",
+    "name": "node-red-house-random",
+    "escapedName": "node-red-house-random",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-red-house-random/-/node-red-house-random-0.0.1.tgz",
+  "_shasum": "e65cde8943e9382588ca374015a827389eaf5580",
+  "_spec": "node-red-house-random",
+  "_where": "/Users/KChikuse/work/MY/nodus",
+  "author": {
+    "name": "Knowledge Chikuse"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Gets random item",
+  "license": "Apache",
+  "name": "node-red-house-random",
+  "node-red": {
+    "nodes": {
+      "rando": "rando.js"
+    }
+  },
+  "version": "0.0.1"
+}

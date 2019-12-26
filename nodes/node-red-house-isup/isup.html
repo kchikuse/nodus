@@ -1,0 +1,108 @@
+<script type="text/javascript">
+  RED.nodes.registerType("isup", {
+    "inputs": 1,
+    "outputs": 1,
+    "color": "#a6bbcf",
+    "icon": "foot.png",
+    "category": "house",
+    "defaults": {
+      "name":  { "value": "" },
+      "rules": { 
+        "value": [{ "url": "" }]
+      },
+    },
+    label: function() {
+      return this.name || "isup"
+    },
+    oneditprepare: function() {
+
+      function generateRule(i,rule) {
+        var container = $('<li/>',{style:"margin:0; padding:8px 0px; border-bottom: 1px solid #ccc;"});
+        var row = $('<div/>').appendTo(container);
+        var row2 = $('<div/>',{style:"padding-top: 5px; text-align: right;"}).appendTo(container);
+
+        var valueField = $('<input/>',{class:"node-input-rule-value",type:"text",style:"margin-left: 5px; width: 85%;"}).appendTo(row);
+        var btwnField = $('<span/>').appendTo(row);
+
+        var finalspan = $('<span/>',{style:"float: right; margin-top: 3px;margin-right: 10px;"}).appendTo(row);
+
+        var deleteButton = $('<a/>',{href:"#",class:"btn btn-mini", style:"margin-left: 5px;"}).appendTo(finalspan);
+        $('<i/>',{class:"fa fa-remove"}).appendTo(deleteButton);
+
+        deleteButton.click(function() {
+            container.css({"background":"#fee"});
+            container.fadeOut(300, function() {
+                $(this).remove();
+                $("#node-input-rule-container").children().each(function(i) {
+                    $(this).find(".node-input-rule-index").html(i+1);
+                });
+
+            });
+        });
+
+      $("#node-input-rule-container").append(container);
+
+        if (typeof rule.url != "undefined") {
+          valueField.val(rule.url);
+        }
+      }
+
+      $("#node-input-add-rule").click(function() {
+          generateRule($("#node-input-rule-container").children().length+1,{v:""});
+          $("#node-input-rule-container-div").scrollTop($("#node-input-rule-container-div").get(0).scrollHeight);
+      });
+
+      for (var i=0;i<this.rules.length;i++) {
+          var rule = this.rules[i];
+          generateRule(i+1,rule);
+      }
+
+      function switchDialogResize(ev,ui) {
+          $("#node-input-rule-container-div").css("height",(ui.size.height-260)+"px");
+      };
+
+      $( "#dialog" ).on("dialogresize", switchDialogResize);
+      $( "#dialog" ).one("dialogopen", function(ev) {
+          var size = $( "#dialog" ).dialog('option','sizeCache-switch');
+          if (size) {
+              switchDialogResize(null,{size:size});
+          }
+      });
+      $( "#dialog" ).one("dialogclose", function(ev,ui) {
+          $( "#dialog" ).off("dialogresize",switchDialogResize);
+      });
+    },    
+    oneditsave: function() {
+      var rules = $("#node-input-rule-container").children();
+      var ruleset;
+      var node = this;
+      node.rules= [];
+      rules.each(function(i) {
+          var rule = $(this)
+          var r = {}
+
+          r.url = rule.find(".node-input-rule-value").val()
+
+          node.rules.push(r)          
+      })
+    }    
+  })
+</script>
+
+<script type="text/x-red" data-template-name="isup">
+  <div class="form-row">
+      <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+      <input type="text" id="node-input-name" placeholder="Name">
+  </div>
+  <div class="form-row">
+    <div id="node-input-rule-container-div" style="border-radius: 5px; height: 310px; padding: 5px; border: 1px solid #ccc; overflow-y:scroll;">
+      <ol id="node-input-rule-container" style=" list-style-type:none; margin: 0;"></ol>
+    </div>
+    <a href="#" class="btn btn-mini" id="node-input-add-rule" style="margin-top: 4px;">
+      <i class="fa fa-plus"></i> Add</a>
+  </div>     
+</script>
+
+<script type="text/x-red" data-help-name="isup">
+  <p>Checks if a website is up</p>
+</script>
